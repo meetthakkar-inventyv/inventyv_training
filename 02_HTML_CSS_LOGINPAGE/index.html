@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="left">
+          <img src="logo.png" alt="Company Logo" class="logo">
+        <h1>MyCompany</h1>
+        <p>
+            Welcome to MyCompany. We build modern, scalable, and secure solutions
+            to help your business grow faster and smarter.
+        </p>
+    </div>
+
+
+    <div class="right">
+
+        <input type="radio" name="tab" id="login" checked>
+        <input type="radio" name="tab" id="register">
+
+        <div class="tabs">
+            <label for="login">Login</label>
+            <label for="register">Register</label>
+        </div>
+
+        <form class="form login-form" onsubmit="return false">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <a href="#login">Forgot password ?</a>
+        </form>
+
+        <form class="form register-form" onsubmit="return false">
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+            <a href="#register">Already have an account?</a>
+        </form>
+
+    </div>
+
+</body>
+</html>
