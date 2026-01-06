@@ -1,70 +1,83 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
+
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap; 
 }
 
-.logo {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    /* margin-left: 100px; */
-    /* padding: 10px; */
-    filter: drop-shadow(5px 4px 8px rgba(0,0,0,0.3));
-}
+
 .left {
-    width: 70%;
+    flex: 7;
+    min-width: 320px; 
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
-    /* padding: 265px; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.logo {
+    width: clamp(4rem, 12vw, 9rem);
+    height: clamp(4rem, 12vw, 9rem);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    filter: drop-shadow(5px 4px 8px rgba(0,0,0,0.3));
 }
 
 .left h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 3vw, 2.8rem);
+    margin-bottom: 1rem;
 }
 
 .left p {
-    font-size: 18px;
-    max-width: 500px;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    max-width: 40rem;
     line-height: 1.6;
 }
 
+
 .right {
-    width: 30%;
+    flex: 3;
+    min-width: 320px; 
     background: #ffffff;
-    padding: 40px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    padding: clamp(1.5rem, 4vw, 3rem);
 }
+
 
 input[type="radio"] {
     display: none;
 }
 
 .tabs {
+    width: 100%;
+    max-width: 420px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .tabs label {
     cursor: pointer;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 0.4rem;
     border-bottom: 2px solid transparent;
 }
 
@@ -74,47 +87,70 @@ input[type="radio"] {
     color: #2c5364;
 }
 
-.form {
-    display: none;
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    height: 18rem;
 }
 
-#login:checked ~ .login-form,
-#register:checked ~ .register-form {
-    display: block;
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: white;
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 1rem;
+    box-shadow: 0 1.2rem 3rem rgba(0,0,0,0.12);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
+
+#login:checked ~ .form-container .login-form,
+#register:checked ~ .form-container .register-form {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 .form input {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
+    padding: 0.7rem;
+    margin-bottom: 0.9rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .form button {
     width: 100%;
-    padding: 12px;
+    padding: 0.7rem;
     background: #2c5364;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .form button:hover {
     background: #203a43;
 }
 
-.form a {
+
+.switch-link {
     display: block;
-    margin-top: 10px;
+    margin-top: 0.8rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #2c5364;
-    text-decoration: none;
+    cursor: pointer;
 }
 
-.form a:hover {
+.switch-link:hover {
     text-decoration: underline;
 }

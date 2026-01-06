@@ -8,14 +8,13 @@
 <body>
 
     <div class="left">
-          <img src="logo.png" alt="Company Logo" class="logo">
+        <img src="logo.png" alt="Company Logo" class="logo">
         <h1>MyCompany</h1>
         <p>
             Welcome to MyCompany. We build modern, scalable, and secure solutions
             to help your business grow faster and smarter.
         </p>
     </div>
-
 
     <div class="right">
 
@@ -27,21 +26,26 @@
             <label for="register">Register</label>
         </div>
 
-        <form class="form login-form" onsubmit="return false">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-            <a href="#login">Forgot password ?</a>
-        </form>
+        <div class="form-container">
+            <form class="form login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <label for="register" class="switch-link">
+                    Don't have an account?
+                </label>
+            </form>
 
-        <form class="form register-form" onsubmit="return false">
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Register</button>
-            <a href="#register">Already have an account?</a>
-        </form>
-
+            <form class="form register-form">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                <label for="login" class="switch-link">
+                    Already have an account?
+                </label>
+            </form>
+        </div>
     </div>
 
 </body>
