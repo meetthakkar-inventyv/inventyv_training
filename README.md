@@ -2,7 +2,7 @@
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 inventyv_training/
@@ -25,9 +25,9 @@ inventyv_training/
 ```
 ---
 
-## 📌 Module Overview
+## Module Overview
 
-### 🔹 01_LOGIC_BUILDING
+### 01_LOGIC_BUILDING
 This module focuses on logic building and algorithmic thinking.
 
 - Created flowcharts for various patterns and algorithms
@@ -38,7 +38,7 @@ Contains a `README.md` with the Figma flowchart link.
 
 ---
 
-### 🔹 02_HTML_CSS_LOGINPAGE
+### 02_HTML_CSS_LOGINPAGE
 This module focuses on frontend development using only HTML and CSS.
 
 - Developed a responsive Login/Register webpage
@@ -52,7 +52,7 @@ Files included:
 
 ---
 
-### 🔹 03_DBMS
+###  03_DBMS
 This module focuses on database management and SQL querying.
 
 - Implemented 50 SQL queries on a Movie Database
@@ -67,6 +67,6 @@ Files included:
 ---
 
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
