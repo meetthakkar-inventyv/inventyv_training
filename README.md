@@ -1,7 +1,5 @@
 # Inventyv Training Repository
 
-This repository contains the work completed during my training at **Inventyv**, focusing on logic building, frontend fundamentals, and database querying. Each folder represents a specific learning module with practical implementations.
-
 ---
 
 ## 📁 Repository Structure
@@ -68,14 +66,6 @@ Files included:
 
 ---
 
-## 🎯 Learning Outcomes
-
-- Improved logical thinking using flowcharts
-- Gained hands-on experience with HTML and CSS
-- Strengthened SQL and DBMS concepts
-- Learned proper Git and GitHub repository structuring
-
----
 
 ## 📄 License
 
