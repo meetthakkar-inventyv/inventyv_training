@@ -41,6 +41,7 @@ A responsive login and registration page created using pure HTML and CSS, emphas
 
 ### 03_DBMS
 Hands-on MySQL assignment involving multiple SQL queries on a movie database, covering essential DBMS concepts.
+
 ---
 
   ## License
