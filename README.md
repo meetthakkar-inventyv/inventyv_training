@@ -4,27 +4,32 @@
 
   ## Repository Structure
 
-  ```text
-  inventyv_training/
-  │
-  ├── 01_LOGIC_BUILDING/
-  │   └── README.md
-  │
-  ├── 02_HTML_CSS_LOGINPAGE/
-  │   ├── index.html
-  │   ├── style.css
-  │   ├── logo.png
-  │   └── README.md
-  │
-  ├── 03_DBMS/
-  │   ├── movies_db_queries.sql
-  │   ├── sql_queries.md
-  │   ├── Questions.txt
-  │   └── README.md
-  │
-  ├── LICENSE
-  └── README.md
-  ```
+ ```text
+inventyv_training/
+│
+├── 01_LOGIC_BUILDING/
+│   └── README.md
+│
+├── 02_HTML_CSS_LOGINPAGE/
+│   ├── index.html
+│   ├── style.css
+│   ├── logo.png
+│   └── README.md
+│
+├── 03_DBMS/
+│   ├── movies_db_queries.sql
+│   ├── sql_queries.md
+│   ├── Questions.txt
+│   └── README.md
+│
+├── 04_JAVASCRIPT_TASK/
+│   ├── task1.js
+│   ├── task3.js
+│   └── README.md
+│
+├── LICENSE
+└── README.md
+```
   ---
 
  ## Modules Overview
@@ -41,6 +46,11 @@ A responsive login and registration page created using pure HTML and CSS, emphas
 
 ### 03_DBMS
 Hands-on MySQL assignment involving multiple SQL queries on a movie database, covering essential DBMS concepts.
+
+---
+
+### 04_JavaScript_Task
+JavaScript practice tasks focusing on array manipulation, function flow, Promises, and working with Symbols to strengthen core JavaScript fundamentals.
 
 ---
 
