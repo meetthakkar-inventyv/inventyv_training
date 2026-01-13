@@ -27,6 +27,10 @@ inventyv_training/
 │   ├── task3.js
 │   └── README.md
 │
+├── 05_Exercism_JavaScript/
+│   ├── [Individual Task Folders]/
+│   └── all solutions.js
+|
 ├── LICENSE
 └── README.md
 ```
@@ -51,6 +55,12 @@ Hands-on MySQL assignment involving multiple SQL queries on a movie database, co
 
 ### 04_JavaScript_Task
 JavaScript practice tasks focusing on array manipulation, function flow, Promises, and working with Symbols to strengthen core JavaScript fundamentals.
+
+---
+
+### 05_Exercism_Javascript
+
+Completed the Exercism JavaScript module, solving various challenges to master language syntax, built-in methods, and logical implementation.
 
 ---
 
