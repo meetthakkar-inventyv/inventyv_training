@@ -5,7 +5,7 @@ This directory contains examples demonstrating **Serde with JSON** in Rust.
 ---
 
 ## folder Structure
-
+```
 3_serde_json/
 ├── 3_1_serde_serialization/
 │ ├── src/
@@ -19,7 +19,7 @@ This directory contains examples demonstrating **Serde with JSON** in Rust.
 │ ├── Cargo.toml
 │ └── README.md
 │
-└── README.md
+└── README.md```
 
 
 
