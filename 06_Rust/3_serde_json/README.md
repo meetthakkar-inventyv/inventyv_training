@@ -19,7 +19,8 @@ This directory contains examples demonstrating **Serde with JSON** in Rust.
 │ ├── Cargo.toml
 │ └── README.md
 │
-└── README.md```
+└── README.md
+```
 
 
 
