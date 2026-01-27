@@ -6,7 +6,7 @@ This project demonstrates the use of **Structs** in Rust to model a real-world *
 The example is designed to closely resemble real-world scenarios such as e-commerce or delivery platforms.
 
 ## Concepts Covered
-- **Struct Definition**: Defining custom data types (`Order`, `Address`, and `Payment`).
+- **Struct Definition**: Defining   custom data types (`Order`, `Address`, and `Payment`).
 - **Nested Structs**: Using multiple structs (`Address` and `Payment`) as fields inside another struct (`Order`).
 - **Impl Block**: Implementing functionality and behavior for structs.
 - **Methods**:
@@ -53,13 +53,23 @@ The `impl Order` block defines multiple methods to interact with order data.
 #### Full Information Method
 - **`get_full_order`**
   - Returns a multi-line formatted string containing all order details in a readable format.
-
+- **`set_full_order`**
+  - Requires an existing mutable `Order` instance.
+  - Updates all fields of the order in a single method call.
+  - Demonstrates a mutating instance method using `&mut self`.
 ### 3. Associated Function
 - **`get_full_order_wo_self`**
   - Does not require an `Order` instance.
   - Accepts all required fields as parameters.
   - Returns a formatted order summary string.
   - Demonstrates how associated functions can be used without object creation.
+
+- **`set_full_order_wo_self`**
+  - Does not require an existing `Order` instance.
+  - Accepts all order-related fields as parameters.
+  - Creates and returns a new `Order` struct.
+  - Demonstrates how associated functions can be used as constructor-style methods.
+  - Demonstrates how associated functions can be used as constructor-style methods.
 
 ### 4. Main Execution
 - Creates an initial `Order` instance with sample data.
@@ -68,6 +78,9 @@ The `impl Order` block defines multiple methods to interact with order data.
 - Updates delivery status and payment amount using setter methods.
 - Prints updated order details.
 - Calls `Order::get_full_order_wo_self` directly to generate order information without using `self`.
+- Demonstrates updating all order fields at once using the `set_full_order` mutating method with `&mut self`.
+- Creates a completely new `Order` instance using the `set_full_order_wo_self` associated function.
+- Prints the newly created order to verify successful creation and data assignment.
 
 
 This project provides a strong foundation for understanding struct-based data modeling and method implementation in Rust.

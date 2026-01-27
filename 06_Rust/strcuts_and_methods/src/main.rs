@@ -16,14 +16,16 @@ struct Payment {
 struct Order {
     order_id: String,
     customer_name: String,
-    address: Address,
-    payment: Payment,
+    address: Address, //Address Struct
+    payment: Payment, //Payment Struct
     total_items: u16,
     is_delivered: bool,
     platform: String,
 }
 
 impl Order {
+
+    ///Setters
     fn set_order_id(&mut self, id: String) {
         self.order_id = id;
     }
@@ -68,6 +70,29 @@ impl Order {
         self.platform = platform;
     }
 
+    fn set_full_order(&mut self, order_id:String, customer_name:String, address:Address, payment:Payment, total_items:u16, is_delivered:bool, platform:String)  {
+        self.order_id = order_id;
+        self.customer_name = customer_name;
+        self.address = address;
+        self.payment = payment;
+        self.total_items = total_items;
+        self.is_delivered = is_delivered;
+        self.platform = platform;
+    }
+
+    fn set_full_order_wo_self(order_id:String, customer_name:String, address:Address, payment:Payment, total_items:u16, is_delivered:bool, platform:String) -> Self  {
+        Self {
+            order_id,
+            customer_name,
+            address,
+            payment,
+            total_items,
+            is_delivered,
+            platform
+        }
+    }
+
+    ///Getters
     fn get_order_id(&self) -> String {
         self.order_id.clone()
     }
@@ -177,15 +202,20 @@ fn main() {
         is_delivered: false,
         platform: "Amazon".to_string(),
     };
-
+    
+    ///Get full order with self
     println!("{}", order.get_full_order());
 
+    ///Set individual fields
     let mut custom_order = order.clone();
     custom_order.set_is_delivered(true);
     custom_order.set_amount(2799.50);
 
+
     println!("\nAfter Update:\n{}", custom_order.get_full_order());
 
+
+    ///Get full order w/o self
     println!(
         "\nWithout self:\n{}",
         Order::get_full_order_wo_self(
@@ -206,4 +236,66 @@ fn main() {
             "Flipkart".to_string()
         )
     );
+
+    ///Set full order with self
+    let mut order = Order {
+        order_id: "ORD101".to_string(),
+        customer_name: "Meet".to_string(),
+        address: Address {
+            city: "Ahmedabad".to_string(),
+            state: "Gujarat".to_string(),
+            country: "India".to_string(),
+        },
+        payment: Payment {
+            method: "UPI".to_string(),
+            transaction_id: "TXN9001".to_string(),
+            amount: 2499.99,
+        },
+        total_items: 3,
+        is_delivered: false,
+        platform: "Amazon".to_string(),
+    };
+
+    order.set_full_order(
+        "ORD202".to_string(),
+        "Rahul".to_string(),
+        Address {
+            city: "Pune".to_string(),
+            state: "Maharashtra".to_string(),
+            country: "India".to_string(),
+        },
+        Payment {
+            method: "Card".to_string(),
+            transaction_id: "TXN777".to_string(),
+            amount: 4999.0,
+        },
+        5,
+        true,
+        "Flipkart".to_string()
+    );
+
+    println!("\nAfter Update:\n{}", order.get_full_order());
+
+
+    ///Set full order w/o self
+    let new_order = Order::set_full_order_wo_self(
+        "04".to_string(),
+        "xyz".to_string(),
+        Address {
+            city: "Delhi".to_string(),
+            state: "Delhi".to_string(),
+            country: "India".to_string(),
+        },
+        Payment {
+            method: "NetBanking".to_string(),
+            transaction_id: "TX004".to_string(),
+            amount: 4444.0,
+        },
+        4,
+        false,
+        "Meesho".to_string(),
+    );
+
+    println!("New Order:\n{:#?}", new_order);
+    
 }
