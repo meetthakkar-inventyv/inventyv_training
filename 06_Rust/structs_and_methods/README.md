@@ -51,7 +51,7 @@ The `impl Order` block defines multiple methods to interact with order data.
 - `get_delivery_status` returns a descriptive string (`"Order Delivered"` or `"Order Pending"`) instead of a raw boolean.
 
 #### Full Information Method
-- **`get_full_order`**
+- **`get_full_order**
   - Returns a multi-line formatted string containing all order details in a readable format.
 - **`set_full_order`**
   - Requires an existing mutable `Order` instance.
