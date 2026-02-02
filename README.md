@@ -29,14 +29,21 @@ inventyv_training/
 │
 ├── 05_Exercism_JavaScript/
 │   ├── [Individual Task Folders]/
-│   └── all solutions.js
-|
+│   └── all_solutions.js
+│
+├── 06_Rust/
+│   ├── 1_control_flow/
+│   ├── 2_structs_and_methods/
+│   ├── 3_serde_json/
+│   ├── 5_Request_Tracking_Assignment/
+│   └── 6_Modules_Assignment/
+│
 ├── LICENSE
 └── README.md
 ```
-  ---
+---
 
- ## Modules Overview
+## Modules Overview
 
 ### 01_LOGIC_BUILDING
 Focuses on developing logical thinking and problem-solving skills through structured approaches and flowcharts.
@@ -62,7 +69,31 @@ JavaScript practice tasks focusing on array manipulation, function flow, Promise
 
 Completed the Exercism JavaScript module, solving various challenges to master language syntax, built-in methods, and logical implementation.
 
+
 ---
+
+### 06_Rust
+
+Rust programming assignments focused on understanding core language concepts, memory safety, concurrency, serialization, and modular application design using Cargo.
+
+- **1_control_flow**  
+  Covers basic Rust control flow constructs such as loops, conditionals, and execution logic.
+
+- **2_structs_and_methods**  
+  Demonstrates struct creation, method implementations, setters/getters, and ownership of data.
+
+- **3_serde_json**  
+  Explores JSON serialization and deserialization using `serde` and `serde_json`.
+
+
+- **5_Request_Tracking_Assignment**  
+  Implements request counters using concurrency primitives like `Mutex`, `RwLock`, and atomics.
+
+- **6_Modules_Assignment**  
+  Focuses on Rust’s module system, organizing code into reusable modules and integrating them through a single entry point.
+
+---
+
 
   ## License
 
