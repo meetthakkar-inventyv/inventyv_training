@@ -35,11 +35,14 @@ inventyv_training/
 │   ├── 1_control_flow/
 │   ├── 2_structs_and_methods/
 │   ├── 3_serde_json/
+│   ├── 4_ownership_and_borrowing/
 │   ├── 5_Request_Tracking_Assignment/
-│   └── 6_Modules_Assignment/
+│   ├── 6_Modules_Assignment/
+│   └── 7_HashMap_HashSet_Assignment/
 │
 ├── LICENSE
 └── README.md
+
 ```
 ---
 
@@ -85,6 +88,8 @@ Rust programming assignments focused on understanding core language concepts, me
 - **3_serde_json**  
   Explores JSON serialization and deserialization using `serde` and `serde_json`.
 
+- **4_ownership_and_borrowing**  
+  Performs task to understand `ownership` and `borrwing` with `mutable references`.
 
 - **5_Request_Tracking_Assignment**  
   Implements request counters using concurrency primitives like `Mutex`, `RwLock`, and atomics.
@@ -92,7 +97,11 @@ Rust programming assignments focused on understanding core language concepts, me
 - **6_Modules_Assignment**  
   Focuses on Rust’s module system, organizing code into reusable modules and integrating them through a single entry point.
 
+- **7_HashMap_HashSet_Assignment**  
+  Demonstrates usage of `HashMap` and `HashSet`, including ownership transfer, cloning, and collection manipulation methods.
+
 ---
+
 
 
   ## License

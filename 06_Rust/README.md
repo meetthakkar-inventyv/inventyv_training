@@ -50,23 +50,33 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
 │   ├── Cargo.toml
 │   └── README.md
 │
-└── 6_Modules_Assignment/
-    │
+├── 6_Modules_Assignment/
+│   ├── src/
+│   │   ├── main.rs
+│   │   └── modules/
+│   │       ├── mod.rs
+│   │       ├── control_flow.rs
+│   │       ├── structs_and_methods.rs
+│   │       ├── serde_serialization.rs
+│   │       ├── serde_deserialization.rs
+│   │       ├── req_track.rs
+│   │       ├── req_track_mutex.rs
+│   │       ├── req_track_rwlock.rs
+│   │       └── ownership_and_borrowing.rs
+│   ├── Cargo.toml
+│   └── README.md
+│
+└── 7_HashMap_HashSet_Assignment/
     ├── src/
     │   ├── main.rs
     │   └── modules/
     │       ├── mod.rs
-    │       ├── control_flow.rs
-    │       ├── structs_and_methods.rs
-    │       ├── serde_serialization.rs
-    │       ├── serde_deserialization.rs
-    │       ├── req_track.rs
-    │       ├── req_track_mutex.rs
-    │       ├── req_track_rwlock.rs
-    │       └── ownership_and_borrowing.rs
-    │
+    │       ├── hashmap.rs
+    │       └── hashset.rs
     ├── Cargo.toml
     └── README.md
+
+    
 ```
 ---
 
@@ -107,3 +117,7 @@ Focuses on Rust’s module system and project organization.
 Demonstrates splitting logic into multiple modules and integrating them using `mod.rs` and a single `main.rs`.
 
 ---
+
+### 7_HashMap_HashSet_Assignment
+Focuses on using Rust’s `HashMap` and `HashSet` collections.  
+Demonstrates inserting data, ownership transfer using `std::mem::take`, cloning collections, and applying methods like `retain` and `extend` while understanding the `Default` trait behavior.
