@@ -8,6 +8,8 @@ fn main() {
     modules::serde_serialization::run();
     println!("----------------------Serde Deserialzation----------------------");
     modules::serde_deserialization::run();
+    println!("----------------------Ownership And Borrowing Using Mutable Reference----------------------");
+    modules::ownership_and_borrowing::run();
     println!("----------------------Request Traxking----------------------");
     modules::req_track::run();
 }

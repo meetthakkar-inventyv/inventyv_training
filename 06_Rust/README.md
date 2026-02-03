@@ -51,6 +51,7 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
 │   └── README.md
 │
 └── 6_Modules_Assignment/
+    │
     ├── src/
     │   ├── main.rs
     │   └── modules/
@@ -61,7 +62,9 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
     │       ├── serde_deserialization.rs
     │       ├── req_track.rs
     │       ├── req_track_mutex.rs
-    │       └── req_track_rwlock.rs
+    │       ├── req_track_rwlock.rs
+    │       └── ownership_and_borrowing.rs
+    │
     ├── Cargo.toml
     └── README.md
 ```
