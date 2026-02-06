@@ -66,17 +66,22 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
 │   ├── Cargo.toml
 │   └── README.md
 │
-└── 7_HashMap_HashSet_Assignment/
+├── 7_HashMap_HashSet_Assignment/
+│   ├── src/
+│   │   ├── main.rs
+│   │   └── modules/
+│   │       ├── mod.rs
+│   │       ├── hashmap.rs
+│   │       └── hashset.rs
+│   ├── Cargo.toml
+│   └── README.md
+│
+└── 8_Inventory_Management/
     ├── src/
-    │   ├── main.rs
-    │   └── modules/
-    │       ├── mod.rs
-    │       ├── hashmap.rs
-    │       └── hashset.rs
+    │   └── main.rs
     ├── Cargo.toml
     └── README.md
 
-    
 ```
 ---
 
@@ -121,3 +126,9 @@ Demonstrates splitting logic into multiple modules and integrating them using `m
 ### 7_HashMap_HashSet_Assignment
 Focuses on using Rust’s `HashMap` and `HashSet` collections.  
 Demonstrates inserting data, ownership transfer using `std::mem::take`, cloning collections, and applying methods like `retain` and `extend` while understanding the `Default` trait behavior.
+
+---
+
+### 8_Inventory_Management
+Implements a generic inventory system using Rust generics and traits.  
+Demonstrates trait bounds, `HashMap`-based storage, cloning, and custom error handling using `Enum`.  

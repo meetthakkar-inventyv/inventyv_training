@@ -38,11 +38,11 @@ inventyv_training/
 │   ├── 4_ownership_and_borrowing/
 │   ├── 5_Request_Tracking_Assignment/
 │   ├── 6_Modules_Assignment/
-│   └── 7_HashMap_HashSet_Assignment/
+│   ├── 7_HashMap_HashSet_Assignment/
+│   └── 8_Inventory_Management/
 │
 ├── LICENSE
 └── README.md
-
 ```
 ---
 
@@ -100,6 +100,9 @@ Rust programming assignments focused on understanding core language concepts, me
 - **7_HashMap_HashSet_Assignment**  
   Demonstrates usage of `HashMap` and `HashSet`, including ownership transfer, cloning, and collection manipulation methods.
 
+- **8_Inventory_Management**
+  Implements a generic inventory system using traits and generics.
+  Focuses on `HashMap`-based storage, trait bounds, cloning, and custom error handling with `Enum`.
 ---
 
 
