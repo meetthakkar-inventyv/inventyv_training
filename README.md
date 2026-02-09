@@ -39,7 +39,8 @@ inventyv_training/
 │   ├── 5_Request_Tracking_Assignment/
 │   ├── 6_Modules_Assignment/
 │   ├── 7_HashMap_HashSet_Assignment/
-│   └── 8_Inventory_Management/
+│   ├── 8_Inventory_Management/
+│   └── 9_Inventory_Lifetimes_and_Closures/
 │
 ├── LICENSE
 └── README.md
@@ -103,6 +104,10 @@ Rust programming assignments focused on understanding core language concepts, me
 - **8_Inventory_Management**
   Implements a generic inventory system using traits and generics.
   Focuses on `HashMap`-based storage, trait bounds, cloning, and custom error handling with `Enum`.
+
+- **9_Inventory_Lifetimes_and_Closures**
+Extends the inventory system by storing borrowed data using lifetimes.
+Focuses on lifetime annotations, reference-based storage, closures for displaying inventory data, and safe memory management without ownership.
 ---
 
 

@@ -76,13 +76,19 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
 │   ├── Cargo.toml
 │   └── README.md
 │
-└── 8_Inventory_Management/
+├── 8_Inventory_Management/
+│   ├── src/
+│   │   └── main.rs
+│   ├── Cargo.toml
+│   └── README.md
+│
+└── 9_Inventory_Lifetimes_and_Closures/
     ├── src/
     │   └── main.rs
     ├── Cargo.toml
     └── README.md
-
 ```
+
 ---
 
 ## Module Overview
@@ -132,3 +138,7 @@ Demonstrates inserting data, ownership transfer using `std::mem::take`, cloning 
 ### 8_Inventory_Management
 Implements a generic inventory system using Rust generics and traits.  
 Demonstrates trait bounds, `HashMap`-based storage, cloning, and custom error handling using `Enum`.  
+
+### 9_Inventory_Lifetimes_and_Closures
+Extends the inventory system by storing borrowed data using lifetimes.
+Demonstrates lifetime annotations, reference-based storage, closures for data display, and safe memory management without ownership.
