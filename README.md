@@ -1,10 +1,10 @@
-  # Inventyv Training Repository
+# Inventyv Training Repository
 
-  ---
+---
 
-  ## Repository Structure
+## Repository Structure
 
- ```text
+```text
 inventyv_training/
 │
 ├── 01_LOGIC_BUILDING/
@@ -40,7 +40,8 @@ inventyv_training/
 │   ├── 6_Modules_Assignment/
 │   ├── 7_HashMap_HashSet_Assignment/
 │   ├── 8_Inventory_Management/
-│   └── 9_Inventory_Lifetimes_and_Closures/
+│   ├── 9_Inventory_Lifetimes_and_Closures/
+│   └── 10_Multithreading_and_Concurrency/
 │
 ├── LICENSE
 └── README.md
@@ -108,6 +109,9 @@ Rust programming assignments focused on understanding core language concepts, me
 - **9_Inventory_Lifetimes_and_Closures**
 Extends the inventory system by storing borrowed data using lifetimes.
 Focuses on lifetime annotations, reference-based storage, closures for displaying inventory data, and safe memory management without ownership.
+
+- **10_Multithreading_and_Concurrency**
+Implements a 6-thread concurrent system using `Arc`, `Mutex`, and `AtomicI32` for safe shared-state management.
 ---
 
 

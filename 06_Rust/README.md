@@ -82,11 +82,18 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
 │   ├── Cargo.toml
 │   └── README.md
 │
-└── 9_Inventory_Lifetimes_and_Closures/
+├── 9_Inventory_Lifetimes_and_Closures/
+│   ├── src/
+│   │   └── main.rs
+│   ├── Cargo.toml
+│   └── README.md
+│
+└── 10_Multithreading_and_Concurrency/
     ├── src/
     │   └── main.rs
     ├── Cargo.toml
     └── README.md
+
 ```
 
 ---
@@ -139,6 +146,16 @@ Demonstrates inserting data, ownership transfer using `std::mem::take`, cloning 
 Implements a generic inventory system using Rust generics and traits.  
 Demonstrates trait bounds, `HashMap`-based storage, cloning, and custom error handling using `Enum`.  
 
+---
+
 ### 9_Inventory_Lifetimes_and_Closures
 Extends the inventory system by storing borrowed data using lifetimes.
 Demonstrates lifetime annotations, reference-based storage, closures for data display, and safe memory management without ownership.
+
+---
+
+### 10_Multithreading_and_Concurrency
+Implements a multithreaded system using Arc, Mutex, and AtomicI32 for safe shared-state concurrency.
+Demonstrates thread spawning, synchronization, periodic record creation, cleanup logic, and concurrent counting operations.
+
+---
