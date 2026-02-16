@@ -41,7 +41,8 @@ inventyv_training/
 │   ├── 7_HashMap_HashSet_Assignment/
 │   ├── 8_Inventory_Management/
 │   ├── 9_Inventory_Lifetimes_and_Closures/
-│   └── 10_Multithreading_and_Concurrency/
+│   ├── 10_Multithreading_and_Concurrency/
+│   └── 11_Http_Server/
 │
 ├── LICENSE
 └── README.md
@@ -112,6 +113,9 @@ Focuses on lifetime annotations, reference-based storage, closures for displayin
 
 - **10_Multithreading_and_Concurrency**
 Implements a 6-thread concurrent system using `Arc`, `Mutex`, and `AtomicI32` for safe shared-state management.
+
+- **11_Http_Server**
+Builds a fully asynchronous REST API using Axum and Tokio with multi-threaded runtime and isolated blocking file I/O.
 ---
 
 

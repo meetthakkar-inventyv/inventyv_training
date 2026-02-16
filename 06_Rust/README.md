@@ -1,6 +1,6 @@
 # Rust Training Modules
 
-This directory contains hands-on Rust programming assignments created to understand core Rust concepts such as control flow, structs, ownership, serialization, concurrency, and modular design using Cargo projects.
+This directory contains hands-on Rust programming assignments created to understand core Rust concepts such as control flow, structs, ownership, serialization, concurrency, async programming, and modular design using Cargo projects.
 
 Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, source code, and documentation.
 
@@ -88,12 +88,24 @@ Each subfolder is a **standalone Rust project** with its own `Cargo.toml`, sourc
 │   ├── Cargo.toml
 │   └── README.md
 │
-└── 10_Multithreading_and_Concurrency/
+├── 10_Multithreading_and_Concurrency/
+│   ├── src/
+│   │   └── main.rs
+│   ├── Cargo.toml
+│   └── README.md
+│
+└── 11_Http_Server/
     ├── src/
-    │   └── main.rs
+    │   ├── main.rs
+    │   ├── api.rs
+    │   ├── handler.rs
+    │   ├── model.rs
+    │   └── route.rs
     ├── Cargo.toml
-    └── README.md
-
+    ├── Cargo.lock
+    ├── projects.json
+    ├── README.md
+    └── .gitignore
 ```
 
 ---
@@ -159,3 +171,7 @@ Implements a multithreaded system using Arc, Mutex, and AtomicI32 for safe share
 Demonstrates thread spawning, synchronization, periodic record creation, cleanup logic, and concurrent counting operations.
 
 ---
+
+### 11_Http_Server
+Builds a fully asynchronous REST API using `Axum` and `Tokio`.
+Demonstrates multi-threaded runtime configuration, async request handling, shared state management, and isolated blocking file I/O using `spawn_blocking`.
